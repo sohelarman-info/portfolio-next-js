@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 0.8;
+}
+
+body {
+  background-color: $body-color;
+}
+
+::selection {
+  background: $primary-color;
+  color: $primary-intext-color;
+}
