@@ -1,3 +1,8 @@
-h1 {
-  color: red;
-}
+@import "./variables";
+@import "./breakpoints";
+@import "./reset";
+
+// Components scss
+@import "../../components/common/Layout/layout.scss";
+@import "../../components/common/Menubar/menubar.scss";
+@import "../../components/common/Footer/footer.scss";
