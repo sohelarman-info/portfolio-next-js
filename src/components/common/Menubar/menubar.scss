@@ -1,6 +1,7 @@
 nav {
   a {
     color: $primary-text-color;
+    text-decoration: none;
     text-transform: capitalize;
     font-size: 18px;
     transition: all linear 0.3s;
@@ -8,17 +9,16 @@ nav {
       color: $primary-color;
     }
   }
-}
-
-.nav-contact-btn {
-  background: $primary-color;
-  border: none;
-  padding: 10px 20px;
-  color: $primary-intext-color;
-  &:hover {
-    background-color: $primary-color;
-  }
-  &:active {
-    background-color: $primary-text-color !important;
+  .nav-contact-btn {
+    background: $primary-color;
+    border: none;
+    padding: 10px 20px;
+    color: $primary-intext-color;
+    &:hover {
+      background-color: $primary-color;
+    }
+    &:active {
+      background-color: $primary-text-color !important;
+    }
   }
 }
