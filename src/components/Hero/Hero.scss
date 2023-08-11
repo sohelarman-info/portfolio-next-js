@@ -1,0 +1,67 @@
+// Hero Left
+.hero-left {
+  padding: 100px 0;
+  h2 {
+    margin-top: 50px;
+    font-size: 70px;
+    font-weight: $bold;
+    line-height: 100px;
+    .span-creative {
+      background: $primary-color;
+      color: $white;
+      padding: 0 10px;
+    }
+    .span-solution {
+      color: $primary-color;
+      padding: 0 10px;
+    }
+  }
+  p {
+    margin-top: 25px;
+    color: $p-color;
+    font-size: 18px;
+    padding-right: 100px;
+    line-height: 30px;
+  }
+  .hero-button {
+    margin-top: 40px;
+    button {
+      background-color: $primary-color;
+      color: $white;
+      padding: 15px 25px;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      font-weight: $normal;
+      border-radius: 8px;
+    }
+    a {
+      font-size: 20px;
+      text-decoration: underline;
+      color: $primary-text-color;
+      transition: all linear 0.3s;
+      svg {
+        margin-left: 20px;
+      }
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  .follow-button {
+    span {
+      font-size: 18px;
+      font-weight: $normal;
+      color: $primary-text-color;
+    }
+  }
+}
+
+// Hero Right
+.hero-right {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

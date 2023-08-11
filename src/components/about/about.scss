@@ -1,0 +1,45 @@
+.about {
+  padding: 100px 0;
+  .about-title {
+    h2 {
+      color: $primary-text-color;
+      font-size: 48px;
+      font-weight: $bold;
+      line-height: 62px;
+      padding-right: 100px;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  .about-text {
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      color: $p-color;
+      padding-right: 150px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -16px;
+        transform: translateY(-50%);
+        width: 2px;
+        background: $primary-color;
+        height: 80%;
+      }
+    }
+    button {
+      margin-top: 25px;
+      outline: none;
+      border: none;
+      background-color: $primary-color;
+      padding: 15px 25px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: $normal;
+      color: $white;
+    }
+  }
+}

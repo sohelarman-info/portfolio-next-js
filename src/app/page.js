@@ -1,11 +1,14 @@
+"use client";
+import Hero from "@/components/Hero/Hero";
+import About from "@/components/about";
 import Layout from "@/components/common/Layout/Layout";
-import styles from "./styles/page.module.css";
 
 export default function Home() {
   return (
     <div>
       <Layout>
-        <h1>Page</h1>
+        <Hero />
+        <About />
       </Layout>
     </div>
   );

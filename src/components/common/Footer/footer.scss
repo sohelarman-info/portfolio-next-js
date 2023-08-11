@@ -85,3 +85,21 @@
     }
   }
 }
+
+// copyright section
+
+.copyright {
+  background-color: $primary-color;
+  color: $white;
+  padding: 10px 0;
+  ul {
+    li {
+      a {
+        color: $white;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: $normal;
+      }
+    }
+  }
+}
