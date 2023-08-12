@@ -1,0 +1,41 @@
+.services {
+  margin: 50px 0;
+  .service-left {
+    h2 {
+      font-size: 40px;
+      font-weight: $bold;
+      line-height: 60px;
+      padding-right: 100px;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      margin-top: 25px;
+      color: $p-color;
+      font-size: 18px;
+      font-weight: $normal;
+      padding-right: 100px;
+      line-height: 30px;
+    }
+    .service-button {
+      margin-top: 40px;
+      button {
+        background-color: $primary-color;
+        color: $white;
+        padding: 15px 25px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        font-weight: $normal;
+        border-radius: 8px;
+      }
+    }
+  }
+  .service-right {
+    background-image: url(../../components/Images/Services/service-bg.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+  }
+}
