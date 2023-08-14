@@ -1,0 +1,90 @@
+.services {
+  margin: 50px 0;
+  .service-left {
+    h2 {
+      font-size: 40px;
+      font-weight: $bold;
+      line-height: 60px;
+      padding-right: 100px;
+      span {
+        color: $primary-color;
+      }
+    }
+    p {
+      margin-top: 25px;
+      color: $p-color;
+      font-size: 18px;
+      font-weight: $normal;
+      padding-right: 100px;
+      line-height: 30px;
+    }
+    .service-button {
+      margin-top: 40px;
+      button {
+        background-color: $primary-color;
+        color: $white;
+        padding: 15px 25px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        font-weight: $normal;
+        border-radius: 8px;
+      }
+    }
+  }
+  .service-right {
+    background-image: url(../../components/Images/Services/service-bg.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    .service-item {
+      width: 95%;
+      border-radius: 8px;
+      background-color: #fff;
+      padding: 25px;
+      box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+      margin-bottom: 25px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      transition: all linear 0.3s;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &:hover {
+        margin-left: 50px;
+      }
+      .service-item-icon {
+        width: 20%;
+        .service-icon-circle {
+          background-color: $primary-color;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 64px;
+          height: 64px;
+        }
+      }
+      .service-item-content {
+        width: 80%;
+        h2 {
+          color: $primary-text-color;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: $bold;
+          line-height: normal;
+        }
+        p {
+          color: $p-color;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: $normal;
+          padding-right: 50px;
+          line-height: 30px; /* 166.667% */
+        }
+      }
+    }
+  }
+}

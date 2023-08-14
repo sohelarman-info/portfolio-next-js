@@ -40,7 +40,12 @@ const Menubar = () => {
                 </Link>
               ))}
             </Nav>
-            <Button variant="primary nav-contact-btn">Contact Now</Button>
+            <Button
+              className={DmSans.className}
+              variant="primary nav-contact-btn"
+            >
+              Contact Now
+            </Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
