@@ -15,6 +15,14 @@
         font-size: 18px;
         line-height: 30px;
       }
+      ul {
+        padding: 0;
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
       .subcription_form {
         margin-top: 26px;
         width: 100%;
@@ -93,12 +101,15 @@
   color: $white;
   padding: 10px 0;
   ul {
+    padding: 0;
+    margin: 0;
     li {
       a {
         color: $white;
         font-size: 14px;
         line-height: 30px;
         font-weight: $normal;
+        text-decoration: none;
       }
     }
   }
