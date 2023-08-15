@@ -1,3 +1,32 @@
 .partners {
-  padding: 50px 0;
+  margin-top: 50px;
+  .partner-header {
+    margin-bottom: 40px;
+    h2 {
+      color: $heading-title;
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: $bold;
+      line-height: normal;
+    }
+  }
+  .partner-item {
+    border: 1px solid var(--primary-05, #d8d2ec);
+    padding: 40px;
+    height: 210px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    .partner-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        transition: all linear 0.3s;
+      }
+      &:hover svg {
+        scale: 1.2;
+      }
+    }
+  }
 }

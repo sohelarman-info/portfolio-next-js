@@ -51,8 +51,28 @@ const item = {
 };
 
 const Footer = () => {
+  const Animation = {
+    hidden: {
+      y: 10,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div className="footer">
+    <motion.div
+      className="footer"
+      initial="hidden"
+      whileInView="visible"
+      variants={Animation}
+      transition={{
+        staggerChildren: 0.2,
+        duration: 0.4,
+        ease: "easeInOut",
+      }}
+    >
       <Container>
         <Row>
           <Col lg={3} className={OpenSans.className}>
@@ -142,7 +162,7 @@ const Footer = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 

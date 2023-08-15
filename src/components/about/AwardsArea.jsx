@@ -16,7 +16,6 @@ const AwardsArea = () => {
 
   const handleActive = (id) => {
     setActive(id);
-    console.log(id);
   };
 
   return (

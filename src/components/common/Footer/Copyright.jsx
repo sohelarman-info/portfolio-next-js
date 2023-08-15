@@ -4,6 +4,7 @@ import { Open_Sans } from "next/font/google";
 import Link from "next/link";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 const OpenSans = Open_Sans({
   subsets: ["latin"],
@@ -12,8 +13,28 @@ const OpenSans = Open_Sans({
 });
 
 const Copyright = () => {
+  const Animation = {
+    hidden: {
+      y: 10,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div className="copyright">
+    <motion.div
+      className="copyright"
+      initial="hidden"
+      whileInView="visible"
+      variants={Animation}
+      transition={{
+        staggerChildren: 0.2,
+        duration: 0.4,
+        ease: "easeInOut",
+      }}
+    >
       <Container>
         <Row>
           <Col lg={12}>
@@ -29,7 +50,7 @@ const Copyright = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </motion.div>
   );
 };
 
