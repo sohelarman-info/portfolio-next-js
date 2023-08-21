@@ -8,6 +8,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { DM_Sans } from "next/font/google";
+import { motion } from "framer-motion";
 
 const DmSans = DM_Sans({
   subsets: ["latin"],
@@ -16,8 +17,27 @@ const DmSans = DM_Sans({
 });
 
 const Menubar = () => {
+  const Animation = {
+    hidden: {
+      y: -10,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={Animation}
+      transition={{
+        staggerChildren: 0.2,
+        duration: 0.4,
+        ease: "easeInOut",
+      }}
+    >
       <Navbar expand="lg" className="py-3">
         <Container>
           <Link href="/">
@@ -49,7 +69,7 @@ const Menubar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </motion.div>
   );
 };
 

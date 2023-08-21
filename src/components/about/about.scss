@@ -10,6 +10,12 @@
       span {
         color: $primary-color;
       }
+      @include media-breakpoint-down(xs) {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 39px;
+        padding-right: 0;
+      }
     }
   }
   .about-text {
@@ -29,6 +35,12 @@
         background: $primary-color;
         height: 80%;
       }
+      @include media-breakpoint-down(xs) {
+        font-size: 14px;
+        line-height: 28px;
+        padding-right: 0;
+        text-align: center;
+      }
     }
     button {
       margin-top: 25px;
@@ -40,6 +52,13 @@
       font-size: 20px;
       font-weight: $normal;
       color: $white;
+      @include media-breakpoint-down(xs) {
+        margin-top: 20px;
+        padding: 12px 18px;
+        border-radius: 6px;
+        font-size: 14px;
+        width: 100%;
+      }
     }
   }
   .awards-area {
@@ -91,6 +110,13 @@
         font-weight: $bold;
         line-height: normal;
         padding-right: 190px;
+        @include media-breakpoint-down(xs) {
+          font-size: 18px;
+          font-weight: 700;
+          padding-right: 0;
+          margin-top: 25px;
+          text-align: center;
+        }
       }
       p {
         color: $p-color;
@@ -99,6 +125,13 @@
         font-weight: $normal;
         line-height: 30px;
         padding-right: 100px;
+        @include media-breakpoint-down(xs) {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-right: 0;
+          text-align: center;
+        }
       }
       button {
         color: $primary-color;
@@ -116,6 +149,15 @@
           background-color: $primary-color;
           color: $white;
           font-weight: $normal;
+        }
+        @include media-breakpoint-down(xs) {
+          font-size: 14px;
+          font-weight: 700;
+          padding: 11px 22px;
+          border-radius: 6px;
+          border: 1px solid #6344c6;
+          margin-top: 5px;
+          width: 100%;
         }
       }
     }
